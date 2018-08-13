@@ -1,7 +1,7 @@
-FROM alpine/git 
+FROM alpine/git as clone (1)
 WORKDIR /app
 RUN git clone https://github.com/amstallion93/SpringMVC.git
-RUN echo $("Clone Complete")
+RUN echo 'Clone Complete'
 
 FROM maven:3.5-jdk-8-alpine as build (2)
 WORKDIR /app
