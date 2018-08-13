@@ -15,3 +15,5 @@ COPY --from=build /app/target/SpringMVC.war /app
 
 FROM tomcat:8.0.20-jre8
 COPY --from=build /app/target/SpringMVC.war /usr/local/tomcat/webapps/ 
+
+CMD ["catalina.sh", "run"]
