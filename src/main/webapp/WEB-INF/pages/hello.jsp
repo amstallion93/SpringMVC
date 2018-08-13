@@ -1,5 +1,5 @@
 <html>
 <body>
-	<h1>Bipin kumar Message : ${message}</h1>	
+	<h1>Vinay Message : ${message}</h1>	
 </body>
 </html>
