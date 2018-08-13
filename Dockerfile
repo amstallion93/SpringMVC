@@ -1,4 +1,4 @@
-ROM alpine/git as clone (1)
+FROM alpine/git as clone (1)
 WORKDIR /app
 RUN git clone https://github.com/amstallion93/SpringMVC.git
 echo "Clone success"
